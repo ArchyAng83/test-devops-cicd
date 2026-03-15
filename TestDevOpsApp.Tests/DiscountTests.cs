@@ -7,7 +7,7 @@ namespace TestDevOpsApp.Tests
         {
             var total = 100;
             var discount = 20;
-            var expected = 70;
+            var expected = 80;
 
             var result = total - discount;
 
