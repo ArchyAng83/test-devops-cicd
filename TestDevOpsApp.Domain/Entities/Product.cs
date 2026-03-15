@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestDevOpsApp.Domain.Entities
+﻿namespace TestDevOpsApp.Domain.Entities
 {
     public class Product
     {

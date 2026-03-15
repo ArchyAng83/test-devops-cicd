@@ -1,10 +1,11 @@
 <Solution>
   <Folder Name="/.github/" />
   <Folder Name="/.github/workflows/">
-    <File Path="ci.yml" />
+    <File Path=".github/workflows/ci.yml" />
   </Folder>
   <Project Path="TestDevOpsApp.Application/TestDevOpsApp.Application.csproj" />
   <Project Path="TestDevOpsApp.Domain/TestDevOpsApp.Domain.csproj" />
   <Project Path="TestDevOpsApp.Infrastructure/TestDevOpsApp.Infrastructure.csproj" />
+  <Project Path="TestDevOpsApp.Tests/TestDevOpsApp.Tests.csproj" Id="46a55600-da6d-41cf-919e-ed0b93fa20f3" />
   <Project Path="TestDevOpsApp.WebApi/TestDevOpsApp.WebApi.csproj" />
 </Solution>
