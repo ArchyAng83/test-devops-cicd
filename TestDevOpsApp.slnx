@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path="ci.yml" />
+  </Folder>
+</Solution>
