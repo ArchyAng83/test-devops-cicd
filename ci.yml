@@ -26,4 +26,4 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test TestDevOpsApp.Tests/TestDevOpsApp.Tests.csproj --configuration Debug --no-build --verbosity normal
+        run: dotnet test TestDevOpsApp.Tests/TestDevOpsApp.Tests.csproj --configuration Release --no-build --verbosity normal
