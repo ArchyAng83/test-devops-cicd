@@ -3,4 +3,5 @@
   <Folder Name="/.github/workflows/">
     <File Path="ci.yml" />
   </Folder>
+  <Project Path="TestDevOpsApp.WebApi/TestDevOpsApp.WebApi.csproj" />
 </Solution>
