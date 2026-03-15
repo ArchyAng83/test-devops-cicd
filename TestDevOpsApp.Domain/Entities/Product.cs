@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestDevOpsApp.Application.Entities
+namespace TestDevOpsApp.Domain.Entities
 {
     public class Product
     {
