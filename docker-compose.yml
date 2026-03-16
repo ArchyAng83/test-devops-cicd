@@ -11,25 +11,39 @@ services:
       - ConnectionStrings__Redis=cache:6379
       - ASPNETCORE_URLS=http://+:8080
       - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - app-network  
     depends_on:
       - db
       - cache
 
   db:
     image: postgres:latest
+    container_name: db 
     ports:
-      - "5433:5432"
+      - "5435:5432"
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: test_ci_db
+    networks:
+      - app-network  
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d test_ci_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   cache:
     image: redis:latest
-    ports:
-      - "6379:6379"
+    networks:
+      - app-network  
+
+networks:          
+  app-network:
+    driver: bridge
 
 volumes:
   postgres_data:
